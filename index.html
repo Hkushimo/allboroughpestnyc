@@ -11,24 +11,30 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="hero">
+    <header class="siteHeader">
       <nav class="nav" aria-label="Main navigation">
         <a href="#top" class="logoLink" aria-label="All Borough Pest Control home">
           <img src="assets/logo.png" alt="All Borough Pest Control" class="logo" />
         </a>
         <div class="navLinks">
+          <a href="#about">About</a>
           <a href="#services">Services</a>
+          <a href="#process">Process</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
+    </header>
 
-      <section class="heroContent" id="top">
+    <section class="hero" id="top">
+      <section class="heroContent">
         <div>
           <p class="eyebrow">Residential & Commercial</p>
           <h1>Simple, reliable pest control.</h1>
           <p class="lead">
             All Borough Pest Control helps protect homes and businesses with
-            practical treatments, inspections, and prevention.
+            practical treatments, clear inspections, and prevention-focused
+            service. Call for help with active pest problems or to schedule a
+            check before a small issue becomes a larger one.
           </p>
           <div class="actions">
             <a class="button primary" href="tel:2012923456">Call 201-292-3456</a>
@@ -45,56 +51,313 @@
           </a>
         </aside>
       </section>
-    </header>
+    </section>
 
     <main>
+      <section class="trustStrip" aria-label="Service highlights">
+        <p><strong>Inspections First</strong> Find the source before treating.</p>
+        <p><strong>Home & Business</strong> Residential and commercial service.</p>
+        <p><strong>Prevention Focused</strong> Treatment plus exclusion guidance.</p>
+      </section>
+
+      <section class="intro" id="about">
+        <div class="introCopy">
+          <p class="eyebrow">About All Borough</p>
+          <h2>Local pest control built around inspection, treatment, and prevention.</h2>
+          <p>
+            Pest problems are easier to handle when the source is identified
+            first. All Borough Pest Control looks for activity, entry points,
+            nesting conditions, moisture issues, and the areas pests are using
+            to move through a property. From there, service can be focused on
+            the right treatment instead of guesswork.
+          </p>
+          <p>
+            The goal is straightforward: remove the current issue, reduce the
+            conditions that invite pests back, and give homeowners and business
+            owners a clear path for what should happen next.
+          </p>
+        </div>
+        <div class="introChecklist" aria-label="Property types and service focus">
+          <p>
+            <strong>Residential:</strong> homes, apartments, yards, basements,
+            kitchens, and bedrooms.
+          </p>
+          <p>
+            <strong>Commercial:</strong> retail, office, food service,
+            multi-unit, and service spaces.
+          </p>
+          <p>
+            <strong>Prevention:</strong> exclusion work, inspections,
+            monitoring, and follow-up planning.
+          </p>
+        </div>
+      </section>
+
+      <section class="process" id="process">
+        <div class="sectionTitle">
+          <p class="eyebrow">How It Works</p>
+          <h2>A cleaner service process from first call to follow-up.</h2>
+        </div>
+        <div class="processGrid">
+          <article>
+            <span>01</span>
+            <h3>Call or email</h3>
+            <p>
+              Share what you are seeing, where activity is happening, and how
+              urgent the problem is.
+            </p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Inspect the property</h3>
+            <p>
+              Entry points, nesting areas, moisture, food sources, and pest
+              activity are checked before treatment.
+            </p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Treat and prevent</h3>
+            <p>
+              The service plan targets the current issue and identifies steps
+              that help reduce future pest pressure.
+            </p>
+          </article>
+        </div>
+      </section>
+
       <section class="services" id="services">
         <div class="sectionTitle">
           <p class="eyebrow">Services</p>
           <h2>Pest services for your property.</h2>
+          <p>
+            Open each service below for more detail. Every service starts with
+            understanding what is happening on the property and choosing the
+            treatment or prevention step that fits the issue.
+          </p>
         </div>
 
-        <div class="serviceGrid">
-          <article class="serviceCard">
-            <img src="assets/general-pest-control.png" alt="" />
-            <h3>General Pest Control</h3>
-          </article>
-          <article class="serviceCard">
-            <img src="assets/termite-control.png" alt="" />
-            <h3>Termite Control</h3>
-          </article>
-          <article class="serviceCard">
-            <img src="assets/rodent-control.png" alt="" />
-            <h3>Rodent Control</h3>
-          </article>
-          <article class="serviceCard">
-            <img src="assets/bed-bug-treatment.png" alt="" />
-            <h3>Bed Bug Treatment</h3>
-          </article>
-          <article class="serviceCard">
-            <img src="assets/mosquito-control.png" alt="" />
-            <h3>Mosquito Control</h3>
-          </article>
-          <article class="serviceCard">
-            <img src="assets/cockroach-control.png" alt="" />
-            <h3>Cockroach Control</h3>
-          </article>
-          <article class="serviceCard">
-            <img src="assets/ant-control.png" alt="" />
-            <h3>Ant Control</h3>
-          </article>
-          <article class="serviceCard">
-            <img src="assets/commercial-pest-control.png" alt="" />
-            <h3>Commercial Pest Control</h3>
-          </article>
-          <article class="serviceCard">
-            <img src="assets/pest-exclusion.png" alt="" />
-            <h3>Pest Exclusion</h3>
-          </article>
-          <article class="serviceCard">
-            <img src="assets/pest-inspections.png" alt="" />
-            <h3>Pest Inspections</h3>
-          </article>
+        <div class="serviceAccordion">
+          <details class="servicePanel" open>
+            <summary>
+              <img src="assets/general-pest-control.png" alt="" />
+              <span>General Pest Control</span>
+            </summary>
+            <div class="panelBody">
+              <p>
+                General pest control covers common pests that show up around
+                living spaces, storage areas, kitchens, basements, and exterior
+                perimeters. Service can include inspection, targeted treatment,
+                and recommendations for reducing food, water, and shelter
+                sources.
+              </p>
+              <p>
+                This is a good starting point when you are seeing pest activity
+                but are not sure how widespread the issue is.
+              </p>
+            </div>
+          </details>
+
+          <details class="servicePanel">
+            <summary>
+              <img src="assets/termite-control.png" alt="" />
+              <span>Termite Control</span>
+            </summary>
+            <div class="panelBody">
+              <p>
+                Termites can affect framing, joists, trim, flooring, and other
+                wood materials before the problem is obvious. A termite service
+                focuses on finding signs of activity, identifying vulnerable
+                areas, and choosing a treatment plan that protects the structure.
+              </p>
+              <p>
+                Inspections are especially useful before buying, selling, or
+                renovating a property.
+              </p>
+            </div>
+          </details>
+
+          <details class="servicePanel">
+            <summary>
+              <img src="assets/rodent-control.png" alt="" />
+              <span>Rodent Control</span>
+            </summary>
+            <div class="panelBody">
+              <p>
+                Rodent problems often involve more than removing what is already
+                inside. Service looks for entry points, nesting areas, food
+                sources, and routes along walls, utility openings, garages, and
+                basements.
+              </p>
+              <p>
+                The best plan combines control, cleanup recommendations, and
+                exclusion steps to limit repeat activity.
+              </p>
+            </div>
+          </details>
+
+          <details class="servicePanel">
+            <summary>
+              <img src="assets/bed-bug-treatment.png" alt="" />
+              <span>Bed Bug Treatment</span>
+            </summary>
+            <div class="panelBody">
+              <p>
+                Bed bug service starts with a careful inspection of sleeping
+                areas, furniture, seams, cracks, and nearby hiding places. The
+                treatment approach depends on where activity is found and how
+                far it has spread.
+              </p>
+              <p>
+                Clear preparation and follow-up guidance help make the service
+                more effective and reduce the chance of missed areas.
+              </p>
+            </div>
+          </details>
+
+          <details class="servicePanel">
+            <summary>
+              <img src="assets/mosquito-control.png" alt="" />
+              <span>Mosquito Control</span>
+            </summary>
+            <div class="panelBody">
+              <p>
+                Mosquito control focuses on outdoor areas where people gather,
+                along with shady vegetation and standing-water conditions that
+                can support mosquito activity.
+              </p>
+              <p>
+                Seasonal service can make patios, yards, and outdoor work areas
+                more comfortable during warm months.
+              </p>
+            </div>
+          </details>
+
+          <details class="servicePanel">
+            <summary>
+              <img src="assets/cockroach-control.png" alt="" />
+              <span>Cockroach Control</span>
+            </summary>
+            <div class="panelBody">
+              <p>
+                Cockroach control is commonly needed in kitchens, bathrooms,
+                utility areas, basements, and commercial food spaces. Service
+                focuses on harborage areas, moisture, sanitation conditions, and
+                targeted treatment where roaches are active.
+              </p>
+              <p>
+                Follow-up may be recommended when activity is established or
+                when neighboring units or shared walls are involved.
+              </p>
+            </div>
+          </details>
+
+          <details class="servicePanel">
+            <summary>
+              <img src="assets/ant-control.png" alt="" />
+              <span>Ant Control</span>
+            </summary>
+            <div class="panelBody">
+              <p>
+                Ant issues often start outside and move indoors through small
+                cracks, utility penetrations, or gaps around doors and windows.
+                Service identifies trails and likely nesting areas before
+                treatment.
+              </p>
+              <p>
+                Recommendations may include trimming vegetation, sealing entry
+                points, and removing attractants that keep ants returning.
+              </p>
+            </div>
+          </details>
+
+          <details class="servicePanel">
+            <summary>
+              <img src="assets/commercial-pest-control.png" alt="" />
+              <span>Commercial Pest Control</span>
+            </summary>
+            <div class="panelBody">
+              <p>
+                Commercial pest control supports offices, retail spaces, food
+                service locations, multi-unit properties, and other business
+                environments where pest issues can disrupt operations.
+              </p>
+              <p>
+                Service can be scheduled around business needs and focused on
+                prevention, documentation, and recurring monitoring.
+              </p>
+            </div>
+          </details>
+
+          <details class="servicePanel">
+            <summary>
+              <img src="assets/pest-exclusion.png" alt="" />
+              <span>Pest Exclusion</span>
+            </summary>
+            <div class="panelBody">
+              <p>
+                Exclusion helps close the gaps pests use to enter a property.
+                Common areas include foundation openings, utility lines, vents,
+                siding gaps, garage seals, door sweeps, and roofline access
+                points.
+              </p>
+              <p>
+                This work pairs well with rodent service and recurring pest
+                prevention.
+              </p>
+            </div>
+          </details>
+
+          <details class="servicePanel">
+            <summary>
+              <img src="assets/pest-inspections.png" alt="" />
+              <span>Pest Inspections</span>
+            </summary>
+            <div class="panelBody">
+              <p>
+                A pest inspection helps identify what is active, what conditions
+                are contributing to the issue, and where pests may be entering.
+                It is useful for new problems, recurring activity, real estate
+                concerns, and preventive maintenance.
+              </p>
+              <p>
+                After the inspection, you can choose the treatment or prevention
+                plan that fits the property.
+              </p>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <section class="faq">
+        <div class="sectionTitle">
+          <p class="eyebrow">Common Questions</p>
+          <h2>Helpful details before you schedule.</h2>
+        </div>
+        <div class="faqList">
+          <details>
+            <summary>Do I need an inspection first?</summary>
+            <p>
+              In many cases, yes. An inspection helps identify the pest, the
+              source of activity, and whether treatment, exclusion, or both are
+              needed.
+            </p>
+          </details>
+          <details>
+            <summary>Can you help with recurring problems?</summary>
+            <p>
+              Yes. Recurring activity often points to entry points, moisture,
+              food sources, or surrounding conditions that need to be addressed
+              alongside treatment.
+            </p>
+          </details>
+          <details>
+            <summary>Do you handle commercial properties?</summary>
+            <p>
+              Yes. Commercial service can support offices, retail locations,
+              restaurants, multi-unit properties, and other business spaces.
+            </p>
+          </details>
         </div>
       </section>
 
@@ -111,5 +374,21 @@
         </div>
       </section>
     </main>
+
+    <footer class="footer">
+      <div>
+        <img src="assets/logo.png" alt="All Borough Pest Control" />
+        <p>
+          Residential and commercial pest control, inspections, treatment, and
+          exclusion services.
+        </p>
+      </div>
+      <div>
+        <a href="tel:2012923456">201-292-3456</a>
+        <a href="mailto:allboroughpestcontrol@gmail.com">
+          allboroughpestcontrol@gmail.com
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
