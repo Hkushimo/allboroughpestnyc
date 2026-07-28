@@ -55,8 +55,7 @@ a {
 .process,
 .services,
 .faq,
-.cta,
-.footer {
+.cta {
   width: min(1120px, 100%);
   margin: 0 auto;
 }
@@ -560,14 +559,15 @@ h2 {
 }
 
 .footer {
-  margin-top: 0;
-  padding: 42px clamp(18px, 4vw, 64px);
+  width: 100%;
+  margin: 0;
+  padding: 38px max(clamp(18px, 4vw, 64px), calc((100vw - 1120px) / 2));
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(280px, auto);
   align-items: start;
-  gap: 28px;
+  gap: clamp(28px, 6vw, 80px);
   background: #fff;
-  border-top: 1px solid var(--line);
+  border-top: 4px solid var(--navy);
   color: var(--muted);
 }
 
@@ -583,10 +583,13 @@ h2 {
 }
 
 .footerContact {
-  padding-top: 4px;
+  min-width: min(100%, 360px);
+  padding: 22px;
   display: grid;
-  justify-items: end;
-  gap: 7px;
+  justify-items: start;
+  gap: 8px;
+  background: var(--bg);
+  border: 1px solid var(--line);
 }
 
 .footerContact span {
@@ -600,7 +603,7 @@ h2 {
   display: block;
   color: var(--navy);
   font-weight: 900;
-  text-align: right;
+  text-align: left;
   line-height: 1.35;
 }
 
@@ -610,7 +613,7 @@ h2 {
   font-style: normal;
   font-weight: 600;
   line-height: 1.5;
-  text-align: right;
+  text-align: left;
 }
 
 .mobileCallBar {
@@ -664,15 +667,7 @@ h2 {
   }
 
   .footerContact {
-    justify-items: start;
-  }
-
-  .footer a {
-    text-align: left;
-  }
-
-  .footer address {
-    text-align: left;
+    width: 100%;
   }
 }
 
