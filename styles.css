@@ -79,6 +79,32 @@ a {
   display: block;
 }
 
+.navToggle {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.menuButton {
+  width: 44px;
+  height: 44px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  border: 1px solid var(--line);
+  background: #fff;
+  cursor: pointer;
+}
+
+.menuButton span {
+  width: 20px;
+  height: 2px;
+  display: block;
+  background: var(--navy);
+}
+
 .navLinks {
   display: flex;
   gap: 10px;
@@ -614,12 +640,27 @@ h2 {
 
 @media (max-width: 620px) {
   .nav {
-    align-items: flex-start;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 44px;
+    align-items: center;
+    gap: 12px;
   }
 
   .logoLink {
-    width: min(100%, 210px);
+    width: min(100%, 190px);
+  }
+
+  .menuButton {
+    display: inline-flex;
+    justify-self: end;
+  }
+
+  .navToggle:checked ~ .menuButton {
+    border-color: var(--blue);
+  }
+
+  .navToggle:checked ~ .navLinks {
+    display: grid;
   }
 
   .navLinks,
@@ -627,6 +668,13 @@ h2 {
   .button,
   .ctaLinks a {
     width: 100%;
+  }
+
+  .navLinks {
+    grid-column: 1 / -1;
+    display: none;
+    gap: 8px;
+    padding-top: 8px;
   }
 
   .navLinks a {
