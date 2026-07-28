@@ -40,10 +40,8 @@ a {
 }
 
 .hero {
-  padding: 64px clamp(18px, 4vw, 64px);
-  background:
-    linear-gradient(120deg, rgba(16, 24, 39, 0.96), rgba(24, 90, 168, 0.9)),
-    #101827;
+  padding: clamp(46px, 7vw, 82px) clamp(18px, 4vw, 64px);
+  background: linear-gradient(120deg, #101827, #185aa8);
   color: #fff;
 }
 
@@ -95,9 +93,14 @@ a {
 
 .heroContent {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(260px, 360px);
-  gap: clamp(28px, 5vw, 60px);
-  align-items: end;
+  grid-template-columns: minmax(0, 0.78fr) minmax(420px, 1fr);
+  gap: clamp(28px, 5vw, 58px);
+  align-items: center;
+}
+
+.heroCopy {
+  position: relative;
+  z-index: 2;
 }
 
 .eyebrow {
@@ -124,7 +127,7 @@ p {
 h1 {
   max-width: 760px;
   margin: 0;
-  font-size: clamp(3rem, 8vw, 6.4rem);
+  font-size: clamp(3rem, 7vw, 5.8rem);
   line-height: 0.94;
   letter-spacing: 0;
 }
@@ -170,10 +173,30 @@ h1 {
   color: #fff;
 }
 
+.heroVisual {
+  position: relative;
+  min-height: 390px;
+}
+
+.heroVisual img {
+  width: 100%;
+  min-height: 390px;
+  display: block;
+  object-fit: cover;
+  object-position: center right;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.28);
+}
+
 .contactCard {
+  position: absolute;
+  right: 22px;
+  bottom: 22px;
+  width: min(360px, calc(100% - 44px));
   padding: 26px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(16, 24, 39, 0.86);
   border: 1px solid rgba(255, 255, 255, 0.24);
+  backdrop-filter: blur(12px);
 }
 
 .contactCard span {
@@ -472,6 +495,14 @@ h2 {
     grid-template-columns: 1fr;
   }
 
+  .heroVisual {
+    min-height: 320px;
+  }
+
+  .heroVisual img {
+    min-height: 320px;
+  }
+
   .trustStrip {
     gap: 0;
   }
@@ -527,6 +558,20 @@ h2 {
 
   h1 {
     font-size: clamp(2.7rem, 16vw, 4.5rem);
+  }
+
+  .heroVisual {
+    min-height: 260px;
+  }
+
+  .heroVisual img {
+    min-height: 260px;
+  }
+
+  .contactCard {
+    position: static;
+    width: 100%;
+    margin-top: 14px;
   }
 
   .intro {
