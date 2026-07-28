@@ -587,6 +587,10 @@ h2 {
   line-height: 1.6;
 }
 
+.mobileCallBar {
+  display: none;
+}
+
 @media (max-width: 980px) {
   .heroContent,
   .trustStrip,
@@ -639,20 +643,31 @@ h2 {
 }
 
 @media (max-width: 620px) {
+  body {
+    padding-bottom: 76px;
+  }
+
+  .siteHeader {
+    padding: 8px 14px;
+  }
+
   .nav {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 44px;
+    grid-template-columns: minmax(0, 1fr) 40px;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
   }
 
   .logoLink {
-    width: min(100%, 190px);
+    width: min(100%, 150px);
   }
 
   .menuButton {
+    width: 40px;
+    height: 40px;
     display: inline-flex;
     justify-self: end;
+    border-color: #cbd5e1;
   }
 
   .navToggle:checked ~ .menuButton {
@@ -673,16 +688,48 @@ h2 {
   .navLinks {
     grid-column: 1 / -1;
     display: none;
-    gap: 8px;
-    padding-top: 8px;
+    gap: 0;
+    padding: 10px 0 2px;
+    background: #fff;
+    border-top: 1px solid var(--line);
   }
 
   .navLinks a {
+    min-height: 46px;
+    padding: 12px 14px;
+    border-width: 0 0 1px;
     text-align: center;
+    font-size: 0.95rem;
+  }
+
+  .navLinks .navCall {
+    margin-top: 8px;
+    border: 0;
+    background: var(--red);
+    color: #fff;
   }
 
   h1 {
-    font-size: clamp(2.7rem, 16vw, 4.5rem);
+    font-size: clamp(2.4rem, 13vw, 3.55rem);
+  }
+
+  h2 {
+    font-size: clamp(2rem, 11vw, 2.8rem);
+    line-height: 1.05;
+  }
+
+  .sectionTitle {
+    margin-bottom: 24px;
+  }
+
+  .sectionTitle p,
+  .introCopy p:not(.eyebrow) {
+    font-size: 1rem;
+    line-height: 1.58;
+  }
+
+  .hero {
+    padding: 54px 18px;
   }
 
   .intro {
@@ -700,31 +747,57 @@ h2 {
 
   .servicePanel summary {
     min-height: auto;
-    grid-template-columns: 72px minmax(0, 1fr) 32px;
-    gap: 12px;
-    padding: 12px;
+    grid-template-columns: 58px minmax(0, 1fr) 34px;
+    gap: 10px;
+    padding: 10px;
     font-size: 1rem;
   }
 
   .servicePanel summary strong {
-    font-size: 1rem;
+    font-size: 0.98rem;
+    line-height: 1.15;
   }
 
   .servicePanel summary small {
-    font-size: 0.82rem;
+    font-size: 0.78rem;
+    line-height: 1.35;
   }
 
   .servicePanel summary img {
-    width: 72px;
-    height: 72px;
+    width: 58px;
+    height: 58px;
   }
 
   .servicePanel summary::after {
-    width: 32px;
-    height: 32px;
+    width: 34px;
+    height: 34px;
+    font-size: 1.25rem;
   }
 
   .panelBody {
-    padding: 0 16px 20px;
+    padding: 0 14px 18px;
+  }
+
+  .panelBody p {
+    margin-top: 14px;
+    font-size: 0.95rem;
+    line-height: 1.55;
+  }
+
+  .mobileCallBar {
+    min-height: 54px;
+    position: fixed;
+    right: 14px;
+    bottom: 14px;
+    left: 14px;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--red);
+    color: #fff;
+    box-shadow: 0 12px 30px rgba(16, 24, 39, 0.28);
+    font-size: 1rem;
+    font-weight: 900;
   }
 }
