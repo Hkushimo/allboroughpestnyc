@@ -372,8 +372,8 @@ h2 {
 
 .serviceAccordion {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 14px;
+  gap: 12px;
+  max-width: 940px;
 }
 
 .servicePanel {
@@ -391,7 +391,7 @@ h2 {
 }
 
 .servicePanel summary {
-  min-height: 132px;
+  min-height: 120px;
   display: grid;
   grid-template-columns: 104px minmax(0, 1fr) 38px;
   gap: 16px;
@@ -463,12 +463,12 @@ h2 {
 }
 
 .panelBody {
-  padding: 0 22px 24px;
+  padding: 0 28px 26px 134px;
   border-top: 1px solid var(--line);
 }
 
 .panelBody p {
-  max-width: 820px;
+  max-width: 720px;
   margin: 18px 0 0;
   color: var(--muted);
   font-size: 1rem;
@@ -559,7 +559,6 @@ h2 {
   .intro,
   .whyChoose,
   .processGrid,
-  .serviceAccordion,
   .cta {
     grid-template-columns: 1fr;
   }
