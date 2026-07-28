@@ -587,6 +587,15 @@ h2 {
   line-height: 1.6;
 }
 
+.footer address {
+  margin-top: 10px;
+  color: var(--muted);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: right;
+}
+
 .mobileCallBar {
   display: none;
 }
@@ -638,6 +647,10 @@ h2 {
   }
 
   .footer a {
+    text-align: left;
+  }
+
+  .footer address {
     text-align: left;
   }
 }
