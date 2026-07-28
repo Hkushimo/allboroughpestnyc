@@ -567,7 +567,6 @@ h2 {
   align-items: start;
   gap: clamp(28px, 6vw, 80px);
   background: #fff;
-  border-top: 4px solid var(--navy);
   color: var(--muted);
 }
 
