@@ -340,9 +340,9 @@ h2 {
 }
 
 .servicePanel summary {
-  min-height: 108px;
+  min-height: 142px;
   display: grid;
-  grid-template-columns: 96px minmax(0, 1fr) 34px;
+  grid-template-columns: 92px minmax(0, 1fr) 34px;
   gap: 18px;
   align-items: center;
   padding: 14px 18px 14px 14px;
@@ -376,15 +376,16 @@ h2 {
 }
 
 .servicePanel summary img {
-  width: 96px;
-  height: 80px;
+  width: 92px;
+  height: 118px;
   display: block;
   object-fit: cover;
+  object-position: center;
   background: #f7f8fb;
 }
 
 .panelBody {
-  padding: 0 22px 24px 128px;
+  padding: 0 22px 24px 124px;
   border-top: 1px solid var(--line);
 }
 
@@ -562,15 +563,15 @@ h2 {
 
   .servicePanel summary {
     min-height: auto;
-    grid-template-columns: 72px minmax(0, 1fr) 32px;
+    grid-template-columns: 68px minmax(0, 1fr) 32px;
     gap: 12px;
     padding: 12px;
     font-size: 1rem;
   }
 
   .servicePanel summary img {
-    width: 72px;
-    height: 64px;
+    width: 68px;
+    height: 88px;
   }
 
   .servicePanel summary::after {
