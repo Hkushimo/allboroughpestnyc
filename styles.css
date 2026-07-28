@@ -95,6 +95,12 @@ a {
   color: var(--navy);
 }
 
+.navLinks .navCall {
+  background: var(--red);
+  border-color: var(--red);
+  color: #fff;
+}
+
 .heroContent {
   display: grid;
   grid-template-columns: minmax(0, 680px);
@@ -142,6 +148,15 @@ h1 {
   color: rgba(255, 255, 255, 0.84);
   font-size: clamp(1.05rem, 2vw, 1.28rem);
   line-height: 1.55;
+}
+
+.serviceArea {
+  max-width: 600px;
+  margin: 16px 0 0;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1.5;
 }
 
 .actions,
@@ -208,7 +223,7 @@ h1 {
   background: #fff;
   border-bottom: 1px solid var(--line);
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1px;
 }
 
@@ -265,6 +280,33 @@ h1 {
 
 .introChecklist strong {
   color: var(--navy);
+}
+
+.whyChoose {
+  width: min(1120px, 100%);
+  margin: 44px auto 0;
+  padding: 0 clamp(18px, 4vw, 64px);
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.whyChoose article {
+  padding: 22px;
+  background: #fff;
+  border: 1px solid var(--line);
+}
+
+.whyChoose h3 {
+  margin: 0;
+  color: var(--navy);
+  font-size: 1.05rem;
+}
+
+.whyChoose p {
+  margin: 10px 0 0;
+  color: var(--muted);
+  line-height: 1.55;
 }
 
 .sectionTitle {
@@ -330,6 +372,7 @@ h2 {
 
 .serviceAccordion {
   display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 14px;
 }
 
@@ -340,10 +383,10 @@ h2 {
 }
 
 .servicePanel summary {
-  min-height: 142px;
+  min-height: 136px;
   display: grid;
   grid-template-columns: 92px minmax(0, 1fr) 34px;
-  gap: 18px;
+  gap: 16px;
   align-items: center;
   padding: 14px 18px 14px 14px;
   color: var(--navy);
@@ -351,6 +394,23 @@ h2 {
   font-size: 1.15rem;
   font-weight: 900;
   list-style: none;
+}
+
+.servicePanel summary span {
+  display: grid;
+  gap: 8px;
+}
+
+.servicePanel summary strong {
+  display: block;
+}
+
+.servicePanel summary small {
+  display: block;
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 700;
+  line-height: 1.45;
 }
 
 .servicePanel summary::-webkit-details-marker {
@@ -385,7 +445,7 @@ h2 {
 }
 
 .panelBody {
-  padding: 0 22px 24px 124px;
+  padding: 0 22px 24px;
   border-top: 1px solid var(--line);
 }
 
@@ -444,6 +504,7 @@ h2 {
 .ctaLinks a {
   background: #fff;
   color: var(--navy);
+  min-width: 150px;
 }
 
 .footer {
@@ -478,7 +539,9 @@ h2 {
   .heroContent,
   .trustStrip,
   .intro,
+  .whyChoose,
   .processGrid,
+  .serviceAccordion,
   .cta {
     grid-template-columns: 1fr;
   }
@@ -567,6 +630,10 @@ h2 {
     gap: 12px;
     padding: 12px;
     font-size: 1rem;
+  }
+
+  .servicePanel summary small {
+    font-size: 0.85rem;
   }
 
   .servicePanel summary img {
