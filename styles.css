@@ -295,30 +295,9 @@ h1 {
   margin: 18px 0 0;
 }
 
-.introChecklist {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 12px;
-}
-
-.introChecklist p {
-  margin: 0;
-  padding: 18px 20px;
-  background: #fff;
-  border: 1px solid var(--line);
-  color: var(--muted);
-  line-height: 1.6;
-}
-
-.introChecklist strong {
-  display: block;
-  margin-bottom: 4px;
-  color: var(--navy);
-}
-
 .whyChoose {
   width: min(1120px, 100%);
-  margin: 44px auto 0;
+  margin: 36px auto 0;
   padding: 0 clamp(18px, 4vw, 64px);
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -661,10 +640,6 @@ h2 {
     border-top: 0;
   }
 
-  .introChecklist {
-    grid-template-columns: 1fr;
-  }
-
   .ctaLinks {
     justify-content: flex-start;
   }
@@ -790,10 +765,6 @@ h2 {
 
   .intro {
     padding-top: 54px;
-  }
-
-  .introChecklist p {
-    padding: 16px;
   }
 
   .services {
